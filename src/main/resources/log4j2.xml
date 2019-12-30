@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration monitorInterval="3">
+
+    <!--make  two appenders -->
+    <appenders>
+
+        <File name="ALL" fileName="E:\MyJavaProjects\Task_4_multithreading\log\work.txt">
+            <PatternLayout pattern="%d{ISO8601} [%-5p] (%F:%L) - %m%n"/>
+        </File>
+
+        <File name="WORK" fileName="E:\MyJavaProjects\Task_4_multithreading\log\work.txt">
+            <PatternLayout pattern="%d{ISO8601} [%-5p] (%F:%L) - %m%n"/>
+        </File>
+
+    </appenders>
+
+    <loggers>
+
+<!--        <logger name="by.trjva.chekun.printer.Printer" level="INFO">-->
+<!--            <appender-ref ref="WORK"/>-->
+<!--        </logger>-->
+        <!--        <logger name="by.trjva.chekun.printer.Printer" level="INFO">-->
+        <!--            <appender-ref ref="WORK"/>-->
+        <!--        </logger>-->
+
+        <root level="INFO">
+            <appender-ref ref="WORK"/>
+        </root>
+
+    </loggers>
+
+</configuration>
